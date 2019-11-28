@@ -1,0 +1,17 @@
+{                                                
+  "rules": [
+    {
+      "action": {
+        "type": "expire"
+      },
+      "selection": {
+        "countType": "sinceImagePushed",
+        "countUnit": "days",
+        "countNumber": 1,
+        "tagStatus": "untagged"
+      },
+      "description": "delete untagged image",
+      "rulePriority": 1
+    }
+  ]
+}
